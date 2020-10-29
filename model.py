@@ -28,7 +28,7 @@ class Movie(db.Model):
 
     movie_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     title = db.Column(db.String)
-    overview = db.Column(db.Text)
+    overview = db.Column(db.String)
     release_date = db.Column(db.DateTime)
     poster_path = db.Column(db.String)
 
