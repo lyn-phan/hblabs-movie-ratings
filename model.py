@@ -29,7 +29,7 @@ class Movie(db.Model):
     movie_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     title = db.Column(db.String)
     overview = db.Column(db.String)
-    release_date = db.Column(db.DateTime)
+    release_date = db.Column(db.DateTime) #no leading 0s
     poster_path = db.Column(db.String)
 
     #rating = a list of Rating objects
